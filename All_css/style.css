@@ -1,0 +1,234 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Global Css Here */
+.fix{
+    overflow: hidden;
+}
+/* header design starts here */
+
+
+/* <<Nav design starts here>> */
+body{
+    position: relative;
+}
+.Nav-container{
+    background: rgba(7, 0, 0, 0.6) ;
+    position: absolute;
+    width: 100%;
+    padding: 0px;
+    top: 1.8em;
+    z-index: 10000;
+}
+.Nav-div{
+   width: 70%;
+   margin: 0 auto;
+   position: relative;
+}
+.main-logo{
+    position: absolute;
+    background-color: rgb(56, 53, 53);
+    top: -.4em;
+    padding: .7em .7em;
+    transform: skew(-30deg);
+}
+.main-logo img{
+    transform: skew(30deg);
+}
+.Mynav{
+    
+}
+.Mynav_ul{
+}
+.Mynav_ul li{
+
+}
+.Mynav_ul li a{
+    color: whitesmoke !important;
+    position: relative;
+    padding: 1.2em 1.2em ;
+    z-index: 1;
+}
+.Mynav_ul li a:hover , #active{
+    color: black !important;
+    background-color: whitesmoke;
+}
+.Mynav_ul li a::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0px;
+    width: 0%;
+    height: 0em;
+    background: orangered;
+    transition: all linear 0.3s;
+    
+}
+.Mynav_ul li a:hover:before {
+    width: 60%;
+    height: .3em;
+}
+#active{
+    position: relative;
+    z-index: 1;
+}
+#active::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0px;
+    width: 100%;
+    height: .3em;
+    background: orangered;
+}
+
+/* <<Nav design ends here>> */
+
+
+
+/* <<Banner design starts here>> */
+.slider_container{
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+}
+.mainslider{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    background: rgba(7, 0, 0, 0.9);
+    z-index: -1;
+}
+.maintext{
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+.maintext h3{
+    color: whitesmoke;
+    font-size: 3em;
+    font-weight: 700;
+}
+.EHTwo h2{
+    color: orangered !important;
+    font-size: 4em;
+    font-weight: 700;
+}
+.Pee {
+     margin-bottom: 2.3em;
+}
+.Pee p{
+    font-size: .8em;
+    color: whitesmoke;
+}
+.maintext ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.maintext ul li{
+    list-style: none;
+}
+.maintext ul li a{
+    text-decoration: none;
+    color: whitesmoke;
+    background-color: orangered;
+    font-size: 1.1em;
+    font-weight: 700;
+    padding: .8em .6em;
+    margin: 0em 2em;
+}
+.maintext ul li a:hover{
+    background: transparent;
+    border: 2px solid #fff;
+    transition: all .3s linear;
+}
+.navbar-toggler {
+    padding: 0.25rem .75rem;
+    font-size: 1.25rem;
+    line-height: 1;
+    background-color: red;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+    transition: box-shadow .15s ease-in-out;
+    z-index: 999;
+    margin-left: 544px;
+}
+/* <<Banner design ends here>> */
+/* header design ends here */
+/* media query starts here */
+@media (min-width:575px) {
+    
+    .main-logo{
+        padding: 0px;
+        top: -6px;
+    }
+    .Nav-div {
+     width: 90%;
+     margin: 0 auto;
+     position: relative;
+    }
+    .Nav-container{
+     top: 0em;
+    }
+    .Mynav_ul li a {
+     padding: .8em 0em;
+    }
+    .Mynav_ul{
+        margin-top: 0.8em;
+    }
+}
+
+
+@media (min-width:576px) and (max-width:767.98px){
+
+    .main-logo{
+        padding: 0px;
+        top: -6px;
+    }
+    .Nav-div {
+     width: 90%;
+     margin: 0 auto;
+     position: relative;
+    }
+    .Nav-container{
+     top: 0em;
+    }
+    .Mynav_ul li a {
+     padding: .8em 0em;
+    }
+    .Mynav_ul{
+        margin-top: 0.8em;
+    }
+
+}
+
+
+@media (min-width:768px) and (max-width:991.98px){
+   .main-logo{
+       padding: 0px;
+       top: -6px;
+   }
+   .Nav-div {
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+   }
+   .Nav-container{
+    top: 0em;
+   }
+   .Mynav_ul li a {
+    padding: .8em 0em;
+   }
+   .Mynav_ul{
+       margin-top: 0.8em;
+   }
+}
